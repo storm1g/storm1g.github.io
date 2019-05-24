@@ -1,4 +1,153 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+
+$primary-font: 'Montserrat', sans-serif;
+
+
+// Colors
+$white: #fff;
+$blue: #3490dc;
+$darkgray: #3d4852;
+
+// General Style and Resets
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $primary-font;
+}
+
+blockquote,h1,h2,h3,h4,p,ul {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: $white;
+} 
+
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+.blue {
+  color: $blue;
+}
+
+// Landing/Hero page
+.hero {
+  //background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),url(../img/background.png);
+  background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(../img/triangles.gif);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+}
+
+.wrapper {
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 5em;
+
+  h1 {
+    font-size: 3.5em;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    display: flex;
+    margin-bottom: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    li {
+      padding: 0 0.75em;
+      margin-right: 0.75em;
+      
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      a {
+        text-align: center;
+        color: $white;
+        display: block;
+        transition: all 0.3s ease;
+
+        //border: 2px solid #fff;
+        //border-radius: 50%;
+
+        &.active, &:hover {
+          color: $blue;
+        }
+
+        svg {
+          width:40px;
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+.hero_arrow {
+  font-size: 35px;
+  color: $white;
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  font-size: 30px;
+  cursor: pointer;
+
+  .fa-chevron-down{
+    position: absolute;
+    transform-style: preserve-3d;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    fill: #fff;
+    animation: pulse 1.3s infinite;
+
+    @keyframes pulse {
+      0%,to {
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+          filter: alpha(opacity=40);
+          opacity: .4;
+          top: 0
+      }
+  
+      50% {
+          filter: none;
+          opacity: 1;
+          top: -10px
+      }
+    }
+  }
 }
