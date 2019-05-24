@@ -276,4 +276,86 @@ ul {
 #portfolio .container #projects .item:hover .item-text {
   top: 20%;
 }
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 11;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal-content {
+  position: relative;
+  max-width: 1200px;
+  background: white;
+  padding: 40px;
+  overflow-y: auto;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+  z-index: 10;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.modal-close {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.modal-close svg {
+  padding: 0.5rem;
+}
+
+.modal img {
+  width: 100%;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal.show > .modal-content {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
 /*# sourceMappingURL=main.css.map */
