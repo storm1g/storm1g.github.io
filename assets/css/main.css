@@ -1,4 +1,37 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
+@-webkit-keyframes pulse {
+  0%, to {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: .4;
+    top: 0;
+  }
+  50% {
+    -webkit-filter: none;
+            filter: none;
+    opacity: 1;
+    top: -10px;
+  }
+}
+@keyframes pulse {
+  0%, to {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: .4;
+    top: 0;
+  }
+  50% {
+    -webkit-filter: none;
+            filter: none;
+    opacity: 1;
+    top: -10px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -108,8 +141,8 @@ ul {
   text-align: center;
   color: #fff;
   display: block;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .wrapper ul li a.active, .wrapper ul li a:hover {
@@ -144,35 +177,5 @@ ul {
   fill: #fff;
   -webkit-animation: pulse 1.3s infinite;
           animation: pulse 1.3s infinite;
-}
-
-@-webkit-keyframes pulse {
-  0%, to {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-    filter: alpha(opacity=40);
-    opacity: .4;
-    top: 0;
-  }
-  50% {
-    -webkit-filter: none;
-            filter: none;
-    opacity: 1;
-    top: -10px;
-  }
-}
-
-@keyframes pulse {
-  0%, to {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-    filter: alpha(opacity=40);
-    opacity: .4;
-    top: 0;
-  }
-  50% {
-    -webkit-filter: none;
-            filter: none;
-    opacity: 1;
-    top: -10px;
-  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,13 +1,4 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
-
-$primary-font: 'Montserrat', sans-serif;
-
-
-// Colors
-$white: #fff;
-$blue: #3490dc;
-$darkgray: #3d4852;
+@import 'config';
 
 // General Style and Resets
 html {
@@ -45,7 +36,7 @@ ul {
   color: $blue;
 }
 
-// Landing/Hero page
+// Landing/Hero section
 .hero {
   //background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),url(../img/background.png);
   background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(../img/triangles.gif);
@@ -97,7 +88,7 @@ ul {
         text-align: center;
         color: $white;
         display: block;
-        transition: all 0.3s ease;
+        @include easeOut;
 
         //border: 2px solid #fff;
         //border-radius: 50%;
@@ -134,20 +125,8 @@ ul {
     transform: translate(-50%,-50%);
     fill: #fff;
     animation: pulse 1.3s infinite;
-
-    @keyframes pulse {
-      0%,to {
-          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-          filter: alpha(opacity=40);
-          opacity: .4;
-          top: 0
-      }
-  
-      50% {
-          filter: none;
-          opacity: 1;
-          top: -10px
-      }
-    }
   }
 }
+
+
+// Portfolio section
