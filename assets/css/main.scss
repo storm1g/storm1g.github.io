@@ -4,6 +4,24 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  scrollbar-color: $scrollThumb $scrollTrack;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+
+  &-track {
+    background: $scrollTrack;
+  }
+
+  &-thumb {
+    background: $scrollThumb;
+  }
+
+  &-thumb:hover {
+    background: $scrollHover;
+  }
 }
 
 body {
@@ -35,6 +53,7 @@ ul {
 .blue {
   color: $blue;
 }
+
 
 // Landing/Hero section
 .hero {
@@ -136,6 +155,15 @@ ul {
     text-align: center;
     padding-top: 3rem; //
     margin: 0 auto 3rem; //
+
+    &:after {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 40px;
+      background-color: #3490dc;
+      margin: 20px auto 0;
+    }
   }
 
   .container {
