@@ -1,0 +1,65 @@
+@include mediaMd {
+  //Hero section
+  .wrapper {
+    h1 {
+      font-size: 4.5em;
+    }
+
+    h2 {
+      font-size: 2.75em;
+    }
+
+    .social-list__link svg {
+      width: 55px;
+      font-size: 55px;
+    }
+  }
+
+  .hero_arrow {
+    font-size: 35px;
+  }
+
+
+  // Portfolio section
+
+  #portfolio {
+    h1 {
+      font-size: 2.5rem;
+      padding-top: 4rem; //
+      margin: 0 auto 4rem; //
+    }
+
+    .container {
+      #projects {
+        .item {
+          .item-inner {
+            .item-text {
+              font-size: 2rem; //
+              margin-bottom: 2rem; //
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mediaLg {
+  #portfolio {
+    .container {
+      #projects {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@include mediaXl {
+  #portfolio {
+    .container {
+      #projects {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}

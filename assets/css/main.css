@@ -125,7 +125,7 @@ ul {
 }
 
 .wrapper h2 {
-  font-size: 1.75em;
+  font-size: 2em;
   font-weight: 600;
   margin-bottom: 2rem;
 }
@@ -134,7 +134,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 1em 0;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -173,7 +172,6 @@ ul {
 }
 
 .hero_arrow {
-  font-size: 35px;
   color: #fff;
   position: absolute;
   bottom: 70px;
@@ -209,11 +207,11 @@ ul {
   height: 4px;
   width: 40px;
   background-color: #3490dc;
-  margin: 20px auto 0;
+  margin: 1rem auto 0;
 }
 
 #portfolio .container {
-  max-width: 1280px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -262,8 +260,8 @@ ul {
 }
 
 #portfolio .container #projects .item .item-inner .item-text {
-  font-size: 2rem;
-  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 #portfolio .container #projects .item .item-inner .item-btn {
@@ -384,5 +382,44 @@ ul {
 .modal.show > .modal-content {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper h1 {
+    font-size: 4.5em;
+  }
+  .wrapper h2 {
+    font-size: 2.75em;
+  }
+  .wrapper .social-list__link svg {
+    width: 55px;
+    font-size: 55px;
+  }
+  .hero_arrow {
+    font-size: 35px;
+  }
+  #portfolio h1 {
+    font-size: 2.5rem;
+    padding-top: 4rem;
+    margin: 0 auto 4rem;
+  }
+  #portfolio .container #projects .item .item-inner .item-text {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #portfolio .container #projects {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #portfolio .container #projects {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 /*# sourceMappingURL=main.css.map */

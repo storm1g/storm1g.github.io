@@ -81,14 +81,14 @@ ul {
   }
 
   h2 {
-    font-size: 1.75em;
+    font-size: 2em;
     font-weight: 600;
     margin-bottom: 2rem;
   }
 
   ul {
     display: flex;
-    margin-bottom: 1em 0;
+    //margin-bottom: 1em 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,7 +126,6 @@ ul {
 }
 
 .hero_arrow {
-  font-size: 35px;
   color: $white;
   position: absolute;
   bottom: 70px;
@@ -153,8 +152,8 @@ ul {
 
   h1 {
     text-align: center;
-    padding-top: 3rem; //
-    margin: 0 auto 3rem; //
+    padding-top: 3rem; 
+    margin: 0 auto 3rem;
 
     &:after {
       content: "";
@@ -162,13 +161,12 @@ ul {
       height: 4px;
       width: 40px;
       background-color: #3490dc;
-      margin: 20px auto 0;
+      margin: 1rem auto 0;
     }
   }
 
   .container {
-    max-width: 1280px;
-    //width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
 
     #projects {
@@ -202,8 +200,8 @@ ul {
           margin: 0 auto;
 
           .item-text {
-            font-size: 2rem; //
-            margin-bottom: 3rem; //
+            font-size: 1.5rem; //
+            margin-bottom: 1rem; //
           }
 
           .item-btn {
@@ -237,6 +235,9 @@ ul {
 
         &:hover .item-text {
           top: 20%;
+        }
+
+        &:hover .item-btn {
         }
       }
     }
@@ -317,3 +318,5 @@ opacity: 1;
 .modal.show > .modal-content{
 transform: scale(1);
 }
+
+@import 'mediaqueries';
