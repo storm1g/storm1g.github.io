@@ -283,8 +283,8 @@ ul {
 }
 
 #portfolio .container #projects .item:hover img {
-  -webkit-filter: brightness(10%);
-          filter: brightness(10%);
+  -webkit-filter: brightness(15%);
+          filter: brightness(15%);
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   cursor: pointer;
@@ -382,6 +382,42 @@ ul {
 .modal.show > .modal-content {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+footer {
+  position: relative;
+  background: #16161b;
+  margin-top: 2rem;
+  padding: 2rem 0;
+}
+
+footer #btnTop {
+  position: absolute;
+  background: #3490dc;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 40px;
+  bottom: 2.5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+footer #footerText {
+  text-align: center;
+  color: #fff;
+  line-height: 1.5rem;
+}
+
+footer #footerText a {
+  color: #3490dc;
+}
+
+@media only screen and (min-width: 480px) {
+  footer #btnTop {
+    right: 5rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {

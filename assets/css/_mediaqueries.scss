@@ -1,3 +1,11 @@
+@include mediaSm {
+  footer {
+    #btnTop {
+      right: 5rem;
+    }
+  }
+}
+
 @include mediaMd {
   //Hero section
   .wrapper {
