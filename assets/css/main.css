@@ -243,9 +243,8 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-line-pack: center;
       align-content: center;
   position: absolute;
@@ -261,7 +260,30 @@ ul {
 
 #portfolio .container #projects .item .item-inner .item-text {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+}
+
+#portfolio .container #projects .item .item-inner .tags .tags-wrapper {
+  height: 100%;
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+}
+
+#portfolio .container #projects .item .item-inner .tags .tags-wrapper li {
+  display: inline-block;
+  padding: .5em;
+  background-color: #14588F;
+  color: #FFF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #222;
+  border-radius: 3px;
+  font-family: MontSerrat,Tahoma,Arial,sans-serif;
+  font-size: .75em;
+  margin: 2px;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 #portfolio .container #projects .item .item-inner .item-btn {
@@ -441,7 +463,6 @@ footer #footerText a {
   }
   #portfolio .container #projects .item .item-inner .item-text {
     font-size: 2rem;
-    margin-bottom: 2rem;
   }
 }
 

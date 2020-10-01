@@ -1,4 +1,4 @@
-var modalContent = {
+const modalContent = {
   fillModal(item) {
     const modalTitle = document.querySelector(".modal-info h2");
     const modalDetails = document.querySelector(".modal-info p");
@@ -13,7 +13,7 @@ var modalContent = {
     title: 'World of Tanks Statistics',
     details: 'Aliquam massa nunc, feugiat a nulla non, mollis rhoncus purus. Sed sit amet diam ipsum. Curabitur in turpis lorem. Proin dapibus vitae ipsum eu fringilla. Sed et ligula augue. Nam finibus mauris ex, ut gravida justo iaculis vitae. Suspendisse varius, libero vitae aliquet egestas, odio dolor viverra nibh, sed suscipit lacus ligula at elit.',
     tech: '',
-    live: 'http://storm.eu5.org/',
+    live: 'storm1g.github.io/world-of-tanks-stats',
     source: 'https://github.com/storm1g/world-of-tanks-stats'
   },
   bimboland: {
@@ -24,13 +24,13 @@ var modalContent = {
     live: '',
     source: 'https://github.com/storm1g/bimboland-extension'
   },
-  weatherApp: {
-    img: 'weatherapp.gif',
-    title: 'Weather App',
+  staJesti: {
+    img: 'stajesti.gif',
+    title: 'Sta jesti?',
     details: 'Aliquam massa nunc, feugiat a nulla non, mollis rhoncus purus. Sed sit amet diam ipsum. Curabitur in turpis lorem. Proin dapibus vitae ipsum eu fringilla. Sed et ligula augue. Nam finibus mauris ex, ut gravida justo iaculis vitae. Suspendisse varius, libero vitae aliquet egestas, odio dolor viverra nibh, sed suscipit lacus ligula at elit.',
     tech: '',
     live: '',
-    source: 'https://github.com/storm1g/weather-app'
+    source: 'https://github.com/storm1g/sta-jesti'
   },
   todoApp: {
     img: 'todo.gif',
@@ -56,13 +56,29 @@ var modalContent = {
     live: 'https://storm1g.github.io/patatap-clone/',
     source: 'https://github.com/storm1g/patatap-clone'
   },
-  lvlupdater: {
-    img: 'lvlupdater.gif',
-    title: 'Lvlupdater',
+  portfolio: {
+    img: 'portfolio.gif',
+    title: 'Portfolio site',
+    details: 'Aliquam massa nunc, feugiat a nulla non, mollis rhoncus purus. Sed sit amet diam ipsum. Curabitur in turpis lorem. Proin dapibus vitae ipsum eu fringilla. Sed et ligula augue. Nam finibus mauris ex, ut gravida justo iaculis vitae. Suspendisse varius, libero vitae aliquet egestas, odio dolor viverra nibh, sed suscipit lacus ligula at elit.',
+    tech: '',
+    live: 'https://predraglazic.com/',
+    source: 'https://github.com/storm1g/storm1g.github.io'
+  },
+  gastroZone: {
+    img: 'gastrozone.gif',
+    title: 'Gastrozone AG',
     details: 'Aliquam massa nunc, feugiat a nulla non, mollis rhoncus purus. Sed sit amet diam ipsum. Curabitur in turpis lorem. Proin dapibus vitae ipsum eu fringilla. Sed et ligula augue. Nam finibus mauris ex, ut gravida justo iaculis vitae. Suspendisse varius, libero vitae aliquet egestas, odio dolor viverra nibh, sed suscipit lacus ligula at elit.',
     tech: '',
     live: '',
-    source: ''
+    source: 'https://github.com/storm1g/gastrozone'
+  },
+  stockTrader: {
+    img: 'stocktrader.gif',
+    title: 'Stock Trader',
+    details: 'Aliquam massa nunc, feugiat a nulla non, mollis rhoncus purus. Sed sit amet diam ipsum. Curabitur in turpis lorem. Proin dapibus vitae ipsum eu fringilla. Sed et ligula augue. Nam finibus mauris ex, ut gravida justo iaculis vitae. Suspendisse varius, libero vitae aliquet egestas, odio dolor viverra nibh, sed suscipit lacus ligula at elit.',
+    tech: '',
+    live: 'predraglazic.com/vuejs-stock-trader',
+    source: 'https://github.com/storm1g/vuejs-stock-trader'
   }
 };
 
@@ -109,14 +125,4 @@ function closeModal() {
   modalOverlay.addEventListener('click', function(){
     this.parentNode.classList.remove('show');
   });
-};
-
-function fillModal(item) {
-  const modalTitle = document.querySelector(".modal-info h2");
-  const modalDetails = document.querySelector(".modal-info p");
-  const modalPicture = document.querySelector(".modal-content img");
-
-  modalTitle.innerText = modalContent[item].title;
-  modalDetails.innerText = modalContent[item].details;
-  modalPicture.src = `/assets/img/${modalContent[item].img}`;
 };

@@ -187,7 +187,7 @@ ul {
         .item-inner {
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: space-around;
           align-content: center;
           position: absolute;
           top: 0%;
@@ -201,7 +201,34 @@ ul {
 
           .item-text {
             font-size: 1.5rem; 
-            margin-bottom: 1rem; 
+          }
+
+          .tags { 
+
+            .tags-wrapper {
+              height: 100%;
+              margin: 0 auto;
+              width: 80%;
+              position: relative;
+
+              li {
+                display: inline-block;
+                padding: .5em;
+                background-color: #14588F;
+                color: #FFF;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #222;
+                border-radius: 3px;
+                font-family: MontSerrat,Tahoma,Arial,sans-serif;
+                font-size: .75em;
+                margin: 2px;
+                position: relative;
+                backface-visibility: hidden;
+              }
+            }
+
+            
           }
 
           .item-btn {
@@ -209,7 +236,7 @@ ul {
             border: 3px solid $blue;
             background-color: $blue;
             padding: 0.75rem 1.5rem; 
-            font-size: 16px; 
+            font-size: 16px;
             cursor: pointer;
             align-self: center;
 
