@@ -18,7 +18,7 @@ const modalContent = {
   },
   bimboland: {
     img: 'bimboland.jpg',
-    title: 'Browser Game Chrome Extension',
+    title: 'Bimboland Chrome Extension',
     details: 'Aliquam massa nunc, feugiat a nulla non, mollis rhoncus purus. Sed sit amet diam ipsum. Curabitur in turpis lorem. Proin dapibus vitae ipsum eu fringilla. Sed et ligula augue. Nam finibus mauris ex, ut gravida justo iaculis vitae. Suspendisse varius, libero vitae aliquet egestas, odio dolor viverra nibh, sed suscipit lacus ligula at elit.',
     tech: '',
     live: '',
