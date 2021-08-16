@@ -16,14 +16,6 @@ const modalContent = {
     live: 'storm1g.github.io/world-of-tanks-stats',
     source: 'https://github.com/storm1g/world-of-tanks-stats'
   },
-  bimboland: {
-    img: 'bimboland.jpg',
-    title: 'Bimboland Chrome Extension',
-    details: 'Aliquam massa nunc, feugiat a nulla non, mollis rhoncus purus. Sed sit amet diam ipsum. Curabitur in turpis lorem. Proin dapibus vitae ipsum eu fringilla. Sed et ligula augue. Nam finibus mauris ex, ut gravida justo iaculis vitae. Suspendisse varius, libero vitae aliquet egestas, odio dolor viverra nibh, sed suscipit lacus ligula at elit.',
-    tech: '',
-    live: '',
-    source: 'https://github.com/storm1g/bimboland-extension'
-  },
   staJesti: {
     img: 'stajesti.gif',
     title: 'Sta jesti?',
