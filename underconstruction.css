@@ -1,0 +1,113 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+blockquote, h1, h2, h3, h4, p, ul {
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.blue {
+  color: #3490dc;
+}
+
+.hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6))), url(assets/img/triangles.gif);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(assets/img/triangles.gif);
+  background-size: cover;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+.wrapper {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 5em;
+}
+
+.wrapper h1 {
+  font-size: 3.5em;
+  margin-bottom: 5rem;
+  font-weight: 600;
+}
+
+.wrapper h2{
+  font-size: 1.75em;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrapper ul li {
+  padding: 0 0.75em;
+  margin-right: 0.75em;
+}
+
+.wrapper ul li:last-of-type {
+  margin-right: 0;
+}
+
+.wrapper ul li a {
+  text-align: center;
+  color: #fff;
+  display: block;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.wrapper ul li a.active, .wrapper ul li a:hover {
+  color: #3490dc;
+}
+
+.wrapper ul li a svg {
+  width: 40px;
+  font-size: 40px;
+}
