@@ -31,8 +31,8 @@ ul {
 }
 
 .hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6))), url(assets/img/triangles.gif);
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(assets/img/triangles.gif);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.6))), url(triangles.gif);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(triangles.gif);
   background-size: cover;
   min-height: 100vh;
   display: -webkit-box;
@@ -69,7 +69,7 @@ ul {
 .wrapper h2{
   font-size: 1.75em;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rgem;
 }
 
 .wrapper ul {
